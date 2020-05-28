@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121 130" width="121" height="130">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-343 -4102L1577 -4102L1577 3531L-343 3531Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #033d2e;stroke-width: 4 } 
+	</style>
+	<g id="01a_strona_glowna" clip-path="url(#cp1)">
+		<g id="Group 5916">
+			<path id="Path 203" class="shp0" d="M60.84 4.75L60.97 4.63L116.93 60.59L108.32 69.2L60.97 21.85L60.84 21.98L60.97 21.85L13.61 69.2L5 60.59L60.71 4.63L60.84 4.75Z" />
+			<path id="Path 204" class="shp0" d="M93.26 125.17C101.87 121.4 116.93 106.69 116.93 84.27C106.74 84.54 97.39 77.93 93.26 69.2C89.12 77.93 79.77 84.54 69.58 84.27C69.58 106.69 84.65 121.4 93.26 125.17Z" />
+			<path id="Path 205" class="shp0" d="M22.22 69.2L22.22 107.95L48.05 107.95L48.05 64.9L73.88 64.9L73.88 75.66" />
+			<path id="Path 206" class="shp0" d="M86.8 21.85L86.8 11.08L101.87 11.08L101.87 36.91" />
+			<path id="Path 207" class="shp0" d="M104.02 88.58L91.1 105.8L82.49 97.19" />
+		</g>
+	</g>
+</svg>

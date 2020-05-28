@@ -1,0 +1,91 @@
+.collaboration {
+  &__image {
+    width: 100%;
+  }
+  &__description {
+    background-color: $greenBackground;
+    color: white;
+    padding: 20px;
+    z-index: 1;
+    width: 80%;
+    bottom: -17%;
+    right: 4%;
+  }
+  &__title {
+    font-weight: 600;
+  }
+  &__text {
+    font-size: 0.6rem;
+  }
+  @media (min-width: 470px) {
+    &__description {
+      padding: 35px;
+    }
+    &__text {
+      font-size: 0.8rem;
+    }
+  }
+  @include mq(small) {
+    &__description {
+      bottom: -7%;
+    }
+    &__text {
+      font-size: 1rem;
+    }
+  }
+  @include mq(medium) {
+    &::after {
+      position: absolute;
+      content: "";
+      border: 2px solid red;
+      width: 35%;
+      height: 235px;
+      z-index: -1;
+      top: 20%;
+      right: 5%;
+    }
+    &__description {
+      bottom: 8%;
+      left: 40%;
+      width: 50%;
+    }
+    &__image {
+      width: 50%;
+    }
+    &__text {
+      font-size: 0.8rem;
+    }
+  }
+  @include mq(xlarge) {
+    &::after {
+      width: 35%;
+      top: 15%;
+      height: 400px;
+    }
+    &__description {
+      bottom: 8%;
+      left: 40%;
+      width: 47%;
+      padding: 45px;
+    }
+    &__text {
+      font-size: 1.3rem;
+    }
+  }
+  @include mq(xxlarge) {
+    &::after {
+      width: 35%;
+      top: 15%;
+      height: 400px;
+    }
+    &__description {
+      bottom: 8%;
+      left: 40%;
+      width: 47%;
+      padding: 45px;
+    }
+    &__text {
+      font-size: 1.6rem;
+    }
+  }
+}

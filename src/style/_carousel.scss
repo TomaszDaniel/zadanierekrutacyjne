@@ -1,0 +1,86 @@
+.header {
+  width: 50%;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  z-index: 1;
+  &__title {
+    color: #fff;
+    font-size: 1rem;
+  }
+  &__btn {
+    width: 70px;
+    height: 25px;
+    font-size: 6px;
+    filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
+    background-color: #6d837d;
+    margin-top: 0;
+    border-radius: 0;
+    &:hover {
+      background-color: $lightGrey;
+    }
+  }
+  @include mq(xsmall) {
+    &__title {
+      font-size: 1.2rem;
+    }
+    &__btn {
+      width: 100px;
+      height: 30px;
+      font-size: 9px;
+      &--econews {
+        width: 150px;
+        height: 35px;
+      }
+    }
+  }
+  @include mq(small) {
+    &__title {
+      font-size: 1.9rem;
+    }
+    &__btn {
+      width: 160px;
+      height: 36px;
+      font-size: 16px;
+      margin-top: 10px;
+      &--econews {
+        font-size: 13px;
+      }
+    }
+  }
+  @include mq(large) {
+    &__title {
+      font-size: 3rem;
+    }
+    &__btn {
+      width: 200px;
+      height: 46px;
+    }
+  }
+  @include mq(xlarge) {
+    &__title {
+      font-size: 4rem;
+    }
+    &__btn {
+      width: 240px;
+      margin-top: 16px;
+    }
+  }
+  @include mq(xxlarge) {
+    &__title {
+      font-size: 5rem;
+    }
+  }
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../images/Group\ 5442.svg");
+  width: 35px;
+  height: 35px;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../images/Group\ 5443.svg");
+  width: 35px;
+  height: 35px;
+}

@@ -1,0 +1,143 @@
+.list-group {
+  top: 15%;
+  right: 0;
+  &-item {
+    background-color: $greenBackground;
+    margin: 1px 0;
+    padding: 0 5px;
+    &:first-child,
+    &:last-child {
+      border-radius: 0;
+    }
+    &:hover {
+      transform: scale(1.5) translate(-5px, 0px);
+    }
+  }
+}
+
+.icons {
+  &__container {
+    justify-content: space-evenly;
+    width: 90%;
+  }
+  &__element {
+    box-shadow: 0 0 5px 2px $lightGrey;
+    width: 130px;
+    height: 130px;
+    color: $darkGrey;
+    font-family: "Poppins";
+    font-weight: 600;
+  }
+  &__image {
+    width: 80px;
+    height: 80px;
+    margin: 5px 0;
+    &--logos {
+      width: 60px;
+    }
+    &--socials {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  &__text {
+    font-size: 1rem;
+    margin: 0;
+  }
+  @include mq(xsmall) {
+    &__image--logos {
+      width: 140px;
+      height: 100px;
+    }
+  }
+  @include mq(small) {
+    &__container {
+      width: 65%;
+      &--logos {
+        width: 90%;
+      }
+    }
+    &__image--logos {
+      width: 170px;
+      height: 110px;
+    }
+  }
+  @include mq(medium) {
+    &__element {
+      width: 222px;
+      height: 130px;
+    }
+    &__image {
+      width: 55px;
+      height: 55px;
+      margin: 10px 0;
+      &--logos {
+        width: 120px;
+        height: 95px;
+      }
+      &--socials {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &__text {
+      font-size: 0.7rem;
+    }
+  }
+  @include mq(large) {
+    &__ {
+      width: 75%;
+    }
+    &__element {
+      width: 130px;
+      height: 130px;
+    }
+    &__image {
+      width: 65px;
+      height: 65px;
+      margin: 15px 0;
+      &--logos {
+        width: 150px;
+        height: 120px;
+      }
+      &--socials {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &__text {
+      font-size: 1rem;
+    }
+    .list-group-item {
+      padding: 0 10px;
+    }
+  }
+  @include mq(xlarge) {
+    &__container {
+      width: 75%;
+      &--logos {
+        width: 90%;
+      }
+    }
+    &__element {
+      width: 160px;
+      height: 160px;
+    }
+    &__image {
+      width: 75px;
+      height: 75px;
+      margin: 18px 0;
+      &--logos {
+        width: 170px;
+        height: 135px;
+      }
+      &--socials {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &__text {
+      font-size: 1.2rem;
+    }
+  }
+}

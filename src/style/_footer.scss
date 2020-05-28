@@ -1,0 +1,50 @@
+.footer {
+  background-color: #eaeaea;
+  text-align: center;
+  font-size: 10px;
+  &__list {
+    list-style: none;
+    width: 40%;
+    padding: 0;
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: end;
+    justify-content: flex-end;
+  }
+  &__text {
+    font-size: 0.8rem;
+  }
+  @include mq(medium) {
+    &__container {
+      flex-direction: column;
+      width: 85%;
+      align-items: center;
+    }
+    &__list {
+      margin-right: 0;
+      width: 100%;
+    }
+    &__adress-logo {
+      display: flex;
+      width: 100%;
+    }
+    &__logo {
+      margin-right: auto;
+    }
+    &__text {
+      font-size: 1rem;
+      width: 20%;
+      text-align: right;
+      &--designed {
+        margin: 0 auto;
+      }
+    }
+    &__copyrights {
+      display: flex;
+      width: 100%;
+    }
+    &__socials {
+      margin-left: auto;
+    }
+  }
+}

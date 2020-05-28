@@ -1,0 +1,84 @@
+.frames {
+  margin-top: -5%;
+  &--econews {
+    margin-top: 100px;
+  }
+  &__container {
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__subtitle {
+    font-weight: 600;
+  }
+  @include mq(medium) {
+    margin-top: -2%;
+    &__container {
+      flex-direction: row;
+      width: 90%;
+    }
+    &__image {
+      width: 90%;
+      height: 185px;
+    }
+    &__subtitle,
+    &__date {
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    &__date,
+    &__text--econews,
+    &__subtitle--econews {
+      text-align: left;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    &__title--econews {
+      margin-left: 6%;
+      text-align: left;
+    }
+
+    .frames__container::after {
+      content: "";
+      position: absolute;
+      border: 2px solid red;
+      width: 60%;
+      height: 235px;
+      z-index: -1;
+    }
+    &--econews {
+      margin-top: 75px;
+    }
+  }
+  @include mq(large) {
+    margin-top: 0 &__image {
+      height: 240px;
+      width: 95%;
+    }
+    &__title {
+      font-size: 2.4rem;
+    }
+    .frames__container::after {
+      height: 235px;
+    }
+  }
+  @include mq(xlarge) {
+    &__image {
+      height: 280px;
+    }
+    .frames__container::after {
+      height: 330px;
+    }
+  }
+  @include mq(xxlarge) {
+    &__image {
+      height: 360px;
+    }
+    .frames__container::after {
+      height: 400px;
+    }
+  }
+}

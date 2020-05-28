@@ -1,0 +1,93 @@
+.advantages {
+  position: relative;
+  background-image: url("../images/shutterstock_437067727.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  margin-top: 70px;
+  &__container {
+    padding-top: 80px;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+  }
+  &__subtitle {
+    font-weight: 600;
+  }
+  &__text {
+    font-weight: 500;
+  }
+  &__subcontainer {
+    margin-top: 70px;
+    text-align: center;
+    width: 90%;
+    @media (min-width: 420px) {
+      margin-top: 120px;
+    }
+    &-element {
+      box-shadow: 0 0 5px 2px $lightGrey;
+      padding: 15px;
+      &--secondary {
+        background-color: #eee;
+      }
+    }
+  }
+  @include mq(small) {
+    &__container {
+      padding-top: 140px;
+    }
+    &__subcontainer {
+      margin-top: 150px;
+    }
+  }
+  @include mq(medium) {
+    margin-bottom: 75px;
+    &__title {
+      font-size: 2.5rem;
+    }
+    &__image {
+      width: 55px;
+      height: 55px;
+      margin-top: 10px;
+    }
+    &__subcontainer {
+      margin-top: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-size: 0.6rem;
+      &-element {
+        width: 30%;
+        padding: 10px;
+      }
+    }
+  }
+  @include mq(large) {
+    &__title {
+      font-size: 3.5rem;
+    }
+    &__image {
+      width: 85px;
+      height: 85px;
+      margin-top: 15px;
+    }
+    &__subcontainer {
+      margin-top: 160px;
+      font-size: 0.8rem;
+    }
+  }
+  @include mq(xlarge) {
+    &__title {
+      font-size: 4.5rem;
+    }
+    &__subcontainer {
+      margin-top: 100px;
+      font-size: 1.3rem;
+    }
+  }
+}

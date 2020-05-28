@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 6" width="8" height="6">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-1556 -68L364 -68L364 7565L-1556 7565Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+	</style>
+	<g id="01a_strona_glowna" clip-path="url(#cp1)">
+		<g id="Group 6337">
+			<g id="Group 6293">
+				<g id="Group 6292">
+					<path id="Path 8264" class="shp0" d="M3.84 5.58L0 1.74L1.14 0.6L3.84 3.3L6.54 0.6L7.68 1.74L3.84 5.58Z" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

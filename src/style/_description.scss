@@ -1,0 +1,125 @@
+.description {
+  min-height: 500px;
+  flex-wrap: wrap;
+  &__general {
+    background-image: url("../images/shutterstock_1119514349.png");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    text-align: center;
+    min-height: 300px;
+  }
+  &__general-title {
+    font-size: 1.3rem;
+  }
+  &__general-text {
+    font-size: 0.9rem;
+  }
+  &__detailed {
+    background-color: $greenBackground;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    min-height: 300px;
+  }
+  &__detailed-describe1 {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  &__detailed-describe2 {
+    font-size: 0.65rem;
+  }
+  @include mq(small) {
+    &__general {
+      padding: 20px;
+      min-height: 360px;
+    }
+    &__general-title {
+      font-size: 2.2rem;
+    }
+    &__general-text {
+      font-size: 1.1rem;
+    }
+    &__detailed {
+      padding: 40px;
+      min-height: 360px;
+    }
+    &__detailed-describe1 {
+      font-size: 1rem;
+    }
+    &__detailed-describe2 {
+      font-size: 0.8rem;
+    }
+  }
+  @include mq(medium) {
+    flex-wrap: nowrap;
+    &__general,
+    &__detailed {
+      width: 50vw;
+    }
+  }
+  @include mq(large) {
+    height: 470px;
+    &__general {
+      padding: 30px;
+    }
+    &__general-title {
+      font-size: 2.8rem;
+    }
+    &__general-text {
+      font-size: 1.1rem;
+    }
+    &__detailed {
+      padding: 45px;
+    }
+    &__detailed-describe1 {
+      font-size: 1rem;
+    }
+    &__detailed-describe2 {
+      font-size: 0.85rem;
+    }
+  }
+  @include mq(xlarge) {
+    height: 600px;
+    &__general {
+      padding: 40px;
+    }
+    &__general-title {
+      font-size: 4rem;
+    }
+    &__general-text {
+      font-size: 1.8rem;
+    }
+    &__detailed {
+      padding: 60px;
+    }
+    &__detailed-describe1 {
+      font-size: 1.25rem;
+    }
+    &__detailed-describe2 {
+      font-size: 1.1rem;
+    }
+  }
+  @include mq(xxlarge) {
+    height: 800px;
+    &__general {
+      padding: 60px;
+    }
+    &__general-title {
+      font-size: 4.6rem;
+    }
+    &__general-text {
+      font-size: 2.7rem;
+    }
+    &__detailed {
+      padding: 80px;
+    }
+    &__detailed-describe1 {
+      font-size: 1.7rem;
+    }
+    &__detailed-describe2 {
+      font-size: 1.5rem;
+    }
+  }
+}

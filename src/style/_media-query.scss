@@ -1,0 +1,32 @@
+$breakpoints: (
+  zero: 0,
+  xsmall: 360px,
+  small: 576px,
+  medium: 768px,
+  large: 992px,
+  xlarge: 1200px,
+  xxlarge: 1600px
+);
+
+@mixin mq($breakpoint) {
+  $size: map-get($breakpoints, $breakpoint);
+  @if ($size) {
+    @media (min-width:#{$size}) {
+      @content;
+    }
+  } @else {
+    @error '"#{$breakpoint}" - Size not found';
+  }
+}
+
+@mixin mq-range($breakpoint, $secondbreakpoint) {
+  $size: map-get($breakpoints, $breakpoint);
+  $second-size: map-get($breakpoints, $secondbreakpoint);
+  @if ($size) {
+    @media (min-width:#{$size}) and (max-width:#{$second-size}) {
+      @content;
+    }
+  } @else {
+    @error '"#{$breakpoint,$secondbreakpoint}" - Size not found';
+  }
+}
